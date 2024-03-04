@@ -1,4 +1,4 @@
-package jdbc.vo;
+package me.dongku.jpa.jdbc.vo;
 
 public class AccountVO {
 

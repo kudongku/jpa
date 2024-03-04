@@ -1,6 +1,6 @@
-package jdbc.dao;
+package me.dongku.jpa.jdbc.dao;
 
-import jdbc.vo.AccountVO;
+import me.dongku.jpa.jdbc.vo.AccountVO;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

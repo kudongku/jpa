@@ -1,7 +1,7 @@
-package jdbc;
+package me.dongku.jpa.jdbc;
 
-import jdbc.dao.AccountDAO;
-import jdbc.vo.AccountVO;
+import me.dongku.jpa.jdbc.dao.AccountDAO;
+import me.dongku.jpa.jdbc.vo.AccountVO;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
