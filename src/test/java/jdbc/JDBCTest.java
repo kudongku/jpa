@@ -1,3 +1,7 @@
+package jdbc;
+
+import jdbc.dao.AccountDAO;
+import jdbc.vo.AccountVO;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -57,4 +61,42 @@ public class JDBCTest {
             }
         }
     }
+
+    @Test
+    @DisplayName("JDBC DAO 삽입/조회 실습")
+    void jdbcDAOInsertSelectTest() {
+        // given
+        AccountDAO accountDAO = new AccountDAO();
+
+        // when
+        Integer id = accountDAO.insertAccount(new AccountVO("new user", "new password"));
+
+        // then
+        var account = accountDAO.selectAccount(id);
+        assert account.getUsername().equals("new user");
+    }
+
+
+//    @Test
+//    @DisplayName("SQL Mapper - JDBC Template 실습")
+//    void sqlMapper_JDBCTemplateTest() throws SQLException {
+//        // given
+//        String url = "jdbc:postgresql://localhost:5432/messenger";
+//        String username = "teasun";
+//        String password = "pass";
+//
+//        // when
+//        try (Connection connection = DriverManager.getConnection(url, username, password)) {
+//            System.out.println("Connection created: " + connection);
+//
+//            // then
+//            String selectSql = "SELECT * FROM ACCOUNT";
+//            try (PreparedStatement statement = connection.prepareStatement(selectSql)) {
+//                var rs = statement.executeQuery();
+//                while (rs.next()) {
+//
+//                }
+//            }
+//        }
+//    }
 }
