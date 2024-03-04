@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-    id 'org.springframework.boot' version '2.7.7'
+    id 'org.springframework.boot' version '3.0.1'
     id 'io.spring.dependency-management' version '1.0.15.RELEASE'
 }
 
@@ -29,7 +29,18 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 
     // 5. JDBC Template 등.. Spring 의존성을 받기위한 의존성
-    testImplementation "org.springframework.boot:spring-boot-starter-test"
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    // 6. MyBatis 실습을 위한 의존성
+    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.0'
+    testImplementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter-test:3.0.1'
+    runtimeOnly 'org.postgresql:postgresql'
+
+//    // 7. 개발편의를 위한 Lombok 의존성 추가
+//    compileOnly 'org.projectlombok:lombok'
+//    annotationProcessor 'org.projectlombok:lombok'
+
+
 }
 
 test {
