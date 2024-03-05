@@ -4,24 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90530b05-423f-4569-b280-6a14759d91f8" name="Changes" comment="feat: MyBatisTest 실행불가능한 코드 작성">
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/channel/Channel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/channel/ChannelRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/thread/Thread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/thread/ThreadRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/user/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/user/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/me/dongku/jpa/channel/ChannelRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/me/dongku/jpa/thread/ThreadRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/be3ebfd2-256b-4e87-815d-8e5deba24b58.xml" beforeDir="false" />
+    <list default="true" id="90530b05-423f-4569-b280-6a14759d91f8" name="Changes" comment="feat: RawJPA 클래스 추가 및 실습 테스트 추가">
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/user/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/userChannel/UserChannel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/userChannel/UserChannelRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/me/dongku/jpa/userChannel/UserChannelRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/be3ebfd2-256b-4e87-815d-8e5deba24b58/storage_v2/_src_/database/messenger.E7tmqg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/be3ebfd2-256b-4e87-815d-8e5deba24b58/storage_v2/_src_/database/messenger.E7tmqg/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/me/dongku/jpa/jdbc/JDBCTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/me/dongku/jpa/jdbc/JDBCTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/me/dongku/jpa/mybatics/MyBatisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/me/dongku/jpa/mybatics/MyBatisTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/me/dongku/jpa/mybatics/configuration/DBConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/me/dongku/jpa/mybatics/configuration/DBConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/channel/Channel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/channel/Channel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/user/Address.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/user/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,8 +43,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -110,11 +102,12 @@
       <recent name="me.dongku.jpa" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="me.dongku.jpa.userChannel" />
       <recent name="me.dongku.jpa.channel" />
       <recent name="me.dongku.jpa.thread" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ThreadRepositoryTest.insertThread">
+  <component name="RunManager" selected="Gradle.UserChannelRepositoryTest.insertSelectUserChannel">
     <configuration name="ChannelRepositoryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -129,54 +122,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;me.dongku.jpa.channel.ChannelRepositoryTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="JDBCTemplateTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;me.dongku.jpa.jdbc.JDBCTemplateTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="MyBatisTest.sqlMapper_MyBatisTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;me.dongku.jpa.mybatics.MyBatisTest.sqlMapper_MyBatisTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -235,6 +180,54 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="UserChannelRepositoryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;me.dongku.jpa.userChannel.UserChannelRepositoryTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="UserChannelRepositoryTest.insertSelectUserChannel" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;me.dongku.jpa.userChannel.UserChannelRepositoryTest.insertSelectUserChannel&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="jpa.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="me.dongku.jpa.Application" />
@@ -244,11 +237,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.UserChannelRepositoryTest.insertSelectUserChannel" />
+        <item itemvalue="Gradle.UserChannelRepositoryTest" />
         <item itemvalue="Gradle.ThreadRepositoryTest.insertThread" />
         <item itemvalue="Gradle.ThreadRepositoryTest" />
         <item itemvalue="Gradle.ChannelRepositoryTest" />
-        <item itemvalue="Gradle.JDBCTemplateTest" />
-        <item itemvalue="Gradle.MyBatisTest.sqlMapper_MyBatisTest" />
       </list>
     </recent_temporary>
   </component>
@@ -261,7 +254,7 @@
       <option name="presentableId" value="Default" />
       <updated>1709542817839</updated>
       <workItem from="1709542819031" duration="15044000" />
-      <workItem from="1709627112286" duration="1323000" />
+      <workItem from="1709627112286" duration="6370000" />
     </task>
     <task id="LOCAL-00001" summary="feat: JDBC로 create account">
       <option name="closed" value="true" />
@@ -303,7 +296,23 @@
       <option name="project" value="LOCAL" />
       <updated>1709552006164</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat: RawJPA 클래스 추가 및 실습 테스트 추가">
+      <option name="closed" value="true" />
+      <created>1709628802445</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1709628802445</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat: RawJPA 클래스 추가 및 실습 테스트 추가">
+      <option name="closed" value="true" />
+      <created>1709628813709</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1709628813709</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,7 +335,8 @@
     <MESSAGE value="feat: JDBC DAO로 insert, select 실습" />
     <MESSAGE value="feat: JDBC template로 insert, select 실습" />
     <MESSAGE value="feat: MyBatisTest 실행불가능한 코드 작성" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: MyBatisTest 실행불가능한 코드 작성" />
+    <MESSAGE value="feat: RawJPA 클래스 추가 및 실습 테스트 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: RawJPA 클래스 추가 및 실습 테스트 추가" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

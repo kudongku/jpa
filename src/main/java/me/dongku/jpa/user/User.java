@@ -4,7 +4,9 @@ import jakarta.persistence.*;
 import lombok.*;
 import lombok.ToString.Exclude;
 import me.dongku.jpa.channel.Channel;
+import me.dongku.jpa.userChannel.UserChannel;
 
+import java.util.LinkedHashSet;
 import java.util.Set;
 
 @Getter
@@ -39,13 +41,15 @@ public class User {
     /**
      * 연관관계 - Foreign Key 값을 따로 컬럼으로 정의하지 않고 연관 관계로 정의합니다.
      */
-    @OneToMany
-    @Exclude
-    private Set<Channel> channels;
+    @OneToMany(mappedBy = "user")
+    private Set<UserChannel> userChannels = new LinkedHashSet<>();
 
     /**
      * 연관관계 편의 메소드 - 반대쪽에는 연관관계 편의 메소드가 없도록 주의합니다.
      */
+    public void addUserChannel(UserChannel userChannel){
+        userChannels.add(userChannel);
+    }
 
     /**
      * 서비스 메소드 - 외부에서 엔티티를 수정할 메소드를 정의합니다. (단일 책임을 가지도록 주의합니다.)

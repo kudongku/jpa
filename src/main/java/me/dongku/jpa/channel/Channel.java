@@ -6,6 +6,8 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import me.dongku.jpa.thread.Thread;
+import me.dongku.jpa.user.User;
+import me.dongku.jpa.userChannel.UserChannel;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
@@ -49,11 +51,20 @@ public class Channel {
     @OneToMany(mappedBy = "channel")
     private Set<Thread> threads = new LinkedHashSet<>();
 
+    @OneToMany(mappedBy = "channel")
+    private Set<UserChannel> userChannels = new LinkedHashSet<>();
+
     /**
      * 연관관계 편의 메소드 - 반대쪽에는 연관관계 편의 메소드가 없도록 주의합니다.
      */
     public void addThread(Thread thread) {
         this.threads.add(thread);
+    }
+    public UserChannel addUser(User user){
+        UserChannel userChannel = UserChannel.builder().user(user).channel(this).build();
+        this.userChannels.add(userChannel);
+        user.getUserChannels().add(userChannel);
+        return userChannel;
     }
 
     /**
