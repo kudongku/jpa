@@ -75,28 +75,4 @@ public class JDBCTest {
         var account = accountDAO.selectAccount(id);
         assert account.getUsername().equals("new user");
     }
-
-
-//    @Test
-//    @DisplayName("SQL Mapper - JDBC Template 실습")
-//    void sqlMapper_JDBCTemplateTest() throws SQLException {
-//        // given
-//        String url = "jdbc:postgresql://localhost:5432/messenger";
-//        String username = "teasun";
-//        String password = "pass";
-//
-//        // when
-//        try (Connection connection = DriverManager.getConnection(url, username, password)) {
-//            System.out.println("Connection created: " + connection);
-//
-//            // then
-//            String selectSql = "SELECT * FROM ACCOUNT";
-//            try (PreparedStatement statement = connection.prepareStatement(selectSql)) {
-//                var rs = statement.executeQuery();
-//                while (rs.next()) {
-//
-//                }
-//            }
-//        }
-//    }
 }
