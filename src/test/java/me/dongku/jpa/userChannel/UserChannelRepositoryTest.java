@@ -33,10 +33,30 @@ class UserChannelRepositoryTest {
         Channel channel = Channel.builder().name("testChannel").build();
         UserChannel userChannel = channel.addUser(user);
 
-        userRepository.insertUser(user);
-        channelRepository.insertChannel(channel);
+        User savedUser = userRepository.insertUser(user);
+        Channel savedChannel = channelRepository.insertChannel(channel);
         UserChannel savedUserChannel = userChannelRepository.insertUserChannel(userChannel);
 
+        Channel foundChannel = channelRepository.selectChannel(savedChannel.getId());
+        assert foundChannel.getUserChannels().stream()
+                .map(UserChannel::getChannel)
+                .map(Channel::getName)
+                .anyMatch(name -> name.equals(channel.getName()));
     }
 
+    @Test
+    void insertSelectUserChannelWithCascadeTest() {
+        User user = User.builder().username("test01").password("test01").build();
+        Channel channel = Channel.builder().name("testChannel").build();
+        channel.addUser(user);
+
+        User savedUser = userRepository.insertUser(user);
+        Channel savedChannel = channelRepository.insertChannel(channel);
+
+        Channel foundChannel = channelRepository.selectChannel(savedChannel.getId());
+        assert foundChannel.getUserChannels().stream()
+                .map(UserChannel::getChannel)
+                .map(Channel::getName)
+                .anyMatch(name -> name.equals(channel.getName()));
+    }
 }

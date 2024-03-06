@@ -51,7 +51,7 @@ public class Channel {
     @OneToMany(mappedBy = "channel")
     private Set<Thread> threads = new LinkedHashSet<>();
 
-    @OneToMany(mappedBy = "channel")
+    @OneToMany(mappedBy = "channel", cascade = CascadeType.ALL)
     private Set<UserChannel> userChannels = new LinkedHashSet<>();
 
     /**
@@ -60,7 +60,8 @@ public class Channel {
     public void addThread(Thread thread) {
         this.threads.add(thread);
     }
-    public UserChannel addUser(User user){
+
+    public UserChannel addUser(User user) {
         UserChannel userChannel = UserChannel.builder().user(user).channel(this).build();
         this.userChannels.add(userChannel);
         user.getUserChannels().add(userChannel);
