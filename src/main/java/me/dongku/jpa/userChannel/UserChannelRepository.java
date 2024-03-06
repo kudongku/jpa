@@ -2,20 +2,10 @@ package me.dongku.jpa.userChannel;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
+import me.dongku.jpa.channel.Channel;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class UserChannelRepository {
-
-    @PersistenceContext
-    EntityManager entityManager;
-
-    public UserChannel  insertUserChannel(UserChannel userChannel) {
-        entityManager.persist(userChannel);
-        return userChannel;
-    }
-
-    public UserChannel selectUserChannel(Long id) {
-        return entityManager.find(UserChannel.class, id);
-    }
+public interface UserChannelRepository extends JpaRepository<Channel, Long> {
 }
