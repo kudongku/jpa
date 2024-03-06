@@ -3,7 +3,7 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.49">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <IntrospectionStateNumber>2277</IntrospectionStateNumber>
+      <IntrospectionStateNumber>2486</IntrospectionStateNumber>
       <ServerVersion>16.2</ServerVersion>
       <StartupTime>1709693811</StartupTime>
       <TimeZones>true ACDT
@@ -1399,7 +1399,7 @@ false posixrules
 13212||10|C|G
 13212||-9223372036854775808|U|G
 13212||10|U|G</Grants>
-      <IntrospectionStateNumber>2277</IntrospectionStateNumber>
+      <IntrospectionStateNumber>2486</IntrospectionStateNumber>
       <ObjectId>16384</ObjectId>
       <OwnerName>teasun</OwnerName>
     </database>
@@ -4823,223 +4823,242 @@ false posixrules
     <schema id="264" parent="2" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>2277</IntrospectionStateNumber>
-      <IntrospectionTimestamp>2024-03-06.17:55:19.193</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2024-03-06.08:55:19</LocalIntrospectionTimestamp>
+      <IntrospectionStateNumber>2486</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2024-03-06.18:40:28.076</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2024-03-06.09:40:28</LocalIntrospectionTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>524</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
     </schema>
-    <sequence id="265" parent="264" name="channel_channel_id_seq">
+    <sequence id="265" parent="264" name="channel_id_seq">
       <DasType>bigint|0s</DasType>
-      <ObjectId>28102</ObjectId>
-      <SequenceIdentity>1(1)</SequenceIdentity>
+      <ObjectId>28656</ObjectId>
+      <SequenceIdentity>1(2)</SequenceIdentity>
       <StartValue>1</StartValue>
-      <StateNumber>2270</StateNumber>
+      <StateNumber>2476</StateNumber>
       <OwnerName>teasun</OwnerName>
     </sequence>
-    <sequence id="266" parent="264" name="thread_id_seq">
+    <sequence id="266" parent="264" name="user_channel_id_seq">
       <DasType>bigint|0s</DasType>
-      <ObjectId>28111</ObjectId>
-      <SequenceIdentity>1(1)</SequenceIdentity>
+      <ObjectId>28665</ObjectId>
+      <SequenceIdentity>1(2)</SequenceIdentity>
       <StartValue>1</StartValue>
-      <StateNumber>2271</StateNumber>
+      <StateNumber>2477</StateNumber>
       <OwnerName>teasun</OwnerName>
     </sequence>
     <sequence id="267" parent="264" name="users_id_seq">
       <DasType>bigint|0s</DasType>
-      <ObjectId>28125</ObjectId>
+      <ObjectId>28672</ObjectId>
       <SequenceIdentity>1(2)</SequenceIdentity>
       <StartValue>1</StartValue>
-      <StateNumber>2273</StateNumber>
+      <StateNumber>2478</StateNumber>
       <OwnerName>teasun</OwnerName>
     </sequence>
     <table id="268" parent="264" name="channel">
-      <ObjectId>28103</ObjectId>
-      <StateNumber>2274</StateNumber>
+      <ObjectId>28657</ObjectId>
+      <StateNumber>2481</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>teasun</OwnerName>
     </table>
-    <table id="269" parent="264" name="thread">
-      <ObjectId>28112</ObjectId>
-      <StateNumber>2274</StateNumber>
+    <table id="269" parent="264" name="user_channel">
+      <ObjectId>28666</ObjectId>
+      <StateNumber>2481</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>teasun</OwnerName>
     </table>
-    <table id="270" parent="264" name="user_channel">
-      <ObjectId>28120</ObjectId>
-      <StateNumber>2275</StateNumber>
+    <table id="270" parent="264" name="users">
+      <ObjectId>28673</ObjectId>
+      <StateNumber>2482</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>teasun</OwnerName>
     </table>
-    <table id="271" parent="264" name="users">
-      <ObjectId>28126</ObjectId>
-      <StateNumber>2276</StateNumber>
+    <table id="271" parent="264" name="users_user_channels">
+      <ObjectId>28679</ObjectId>
+      <StateNumber>2483</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>teasun</OwnerName>
     </table>
-    <column id="272" parent="268" name="channel_id">
+    <column id="272" parent="268" name="id">
       <DasType>bigint|0s</DasType>
-      <DefaultExpression>nextval(&apos;channel_channel_id_seq&apos;::regclass)</DefaultExpression>
+      <DefaultExpression>nextval(&apos;channel_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>2270</StateNumber>
-      <SequenceId>28102</SequenceId>
+      <StateNumber>2476</StateNumber>
+      <SequenceId>28656</SequenceId>
       <TypeId>20</TypeId>
     </column>
     <column id="273" parent="268" name="name">
       <DasType>varchar(255)|0s</DasType>
       <Position>2</Position>
-      <StateNumber>2270</StateNumber>
+      <StateNumber>2476</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="274" parent="268" name="type">
       <DasType>varchar(255)|0s</DasType>
       <Position>3</Position>
-      <StateNumber>2270</StateNumber>
+      <StateNumber>2476</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <index id="275" parent="268" name="channel_pkey">
-      <ColNames>channel_id</ColNames>
+      <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>28109</ObjectId>
+      <ObjectId>28663</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>2270</StateNumber>
+      <StateNumber>2476</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
     <key id="276" parent="268" name="channel_pkey">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>28110</ObjectId>
+      <ObjectId>28664</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>2270</StateNumber>
-      <UnderlyingIndexId>28109</UnderlyingIndexId>
+      <StateNumber>2476</StateNumber>
+      <UnderlyingIndexId>28663</UnderlyingIndexId>
     </key>
     <column id="277" parent="269" name="id">
       <DasType>bigint|0s</DasType>
-      <DefaultExpression>nextval(&apos;thread_id_seq&apos;::regclass)</DefaultExpression>
+      <DefaultExpression>nextval(&apos;user_channel_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>2271</StateNumber>
-      <SequenceId>28111</SequenceId>
+      <StateNumber>2477</StateNumber>
+      <SequenceId>28665</SequenceId>
       <TypeId>20</TypeId>
     </column>
-    <column id="278" parent="269" name="message">
-      <DasType>varchar(500)|0s</DasType>
+    <column id="278" parent="269" name="channel_id">
+      <DasType>bigint|0s</DasType>
       <Position>2</Position>
-      <StateNumber>2271</StateNumber>
-      <TypeId>1043</TypeId>
+      <StateNumber>2477</StateNumber>
+      <TypeId>20</TypeId>
     </column>
-    <column id="279" parent="269" name="channel_id">
+    <column id="279" parent="269" name="user_id">
       <DasType>bigint|0s</DasType>
       <Position>3</Position>
-      <StateNumber>2271</StateNumber>
+      <StateNumber>2477</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <foreign-key id="280" parent="269" name="fk49let3fn5c9tn4c4hmj06kth3">
+    <foreign-key id="280" parent="269" name="fkjvn2jdaho89qhua2nxj8firph">
       <ColNames>channel_id</ColNames>
-      <ObjectId>28132</ObjectId>
-      <StateNumber>2274</StateNumber>
+      <ObjectId>28686</ObjectId>
+      <StateNumber>2481</StateNumber>
       <RefKeyColPositions>1</RefKeyColPositions>
-      <RefTableId>28103</RefTableId>
+      <RefTableId>28657</RefTableId>
     </foreign-key>
-    <index id="281" parent="269" name="thread_pkey">
+    <foreign-key id="281" parent="269" name="fkspsusldw9osygm0h5bjyafsni">
+      <ColNames>user_id</ColNames>
+      <ObjectId>28691</ObjectId>
+      <StateNumber>2482</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>28673</RefTableId>
+    </foreign-key>
+    <index id="282" parent="269" name="user_channel_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>28118</ObjectId>
+      <ObjectId>28670</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>2271</StateNumber>
+      <StateNumber>2477</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="282" parent="269" name="thread_pkey">
+    <key id="283" parent="269" name="user_channel_pkey">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>28119</ObjectId>
+      <ObjectId>28671</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>2271</StateNumber>
-      <UnderlyingIndexId>28118</UnderlyingIndexId>
+      <StateNumber>2477</StateNumber>
+      <UnderlyingIndexId>28670</UnderlyingIndexId>
     </key>
-    <column id="283" parent="270" name="user_id">
-      <DasType>bigint|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-      <StateNumber>2272</StateNumber>
-      <TypeId>20</TypeId>
-    </column>
-    <column id="284" parent="270" name="channel_channel_id">
-      <DasType>bigint|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-      <StateNumber>2272</StateNumber>
-      <TypeId>20</TypeId>
-    </column>
-    <foreign-key id="285" parent="270" name="fkspsusldw9osygm0h5bjyafsni">
-      <ColNames>user_id</ColNames>
-      <ObjectId>28142</ObjectId>
-      <StateNumber>2276</StateNumber>
-      <RefKeyColPositions>1</RefKeyColPositions>
-      <RefTableId>28126</RefTableId>
-    </foreign-key>
-    <foreign-key id="286" parent="270" name="fkhyun95fbrlhi6oy1h5qvuvkn5">
-      <ColNames>channel_channel_id</ColNames>
-      <ObjectId>28137</ObjectId>
-      <StateNumber>2275</StateNumber>
-      <RefKeyColPositions>1</RefKeyColPositions>
-      <RefTableId>28103</RefTableId>
-    </foreign-key>
-    <index id="287" parent="270" name="user_channel_pkey">
-      <ColNames>channel_channel_id
-user_id</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <ObjectId>28123</ObjectId>
-      <Primary>1</Primary>
-      <StateNumber>2272</StateNumber>
-      <Unique>1</Unique>
-      <AccessMethodId>403</AccessMethodId>
-    </index>
-    <key id="288" parent="270" name="user_channel_pkey">
-      <NameSurrogate>1</NameSurrogate>
-      <ObjectId>28124</ObjectId>
-      <Primary>1</Primary>
-      <StateNumber>2272</StateNumber>
-      <UnderlyingIndexId>28123</UnderlyingIndexId>
-    </key>
-    <column id="289" parent="271" name="id">
+    <column id="284" parent="270" name="id">
       <DasType>bigint|0s</DasType>
       <DefaultExpression>nextval(&apos;users_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>2273</StateNumber>
-      <SequenceId>28125</SequenceId>
+      <StateNumber>2478</StateNumber>
+      <SequenceId>28672</SequenceId>
       <TypeId>20</TypeId>
     </column>
-    <column id="290" parent="271" name="password">
+    <column id="285" parent="270" name="password">
       <DasType>varchar(25)|0s</DasType>
       <Position>2</Position>
-      <StateNumber>2273</StateNumber>
+      <StateNumber>2478</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="291" parent="271" name="username">
+    <column id="286" parent="270" name="username">
       <DasType>varchar(25)|0s</DasType>
       <Position>3</Position>
-      <StateNumber>2273</StateNumber>
+      <StateNumber>2478</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="292" parent="271" name="users_pkey">
+    <index id="287" parent="270" name="users_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>28130</ObjectId>
+      <ObjectId>28677</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>2273</StateNumber>
+      <StateNumber>2478</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="293" parent="271" name="users_pkey">
+    <key id="288" parent="270" name="users_pkey">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>28131</ObjectId>
+      <ObjectId>28678</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>2273</StateNumber>
-      <UnderlyingIndexId>28130</UnderlyingIndexId>
+      <StateNumber>2478</StateNumber>
+      <UnderlyingIndexId>28677</UnderlyingIndexId>
+    </key>
+    <column id="289" parent="271" name="user_id">
+      <DasType>bigint|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>2479</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="290" parent="271" name="user_channels_id">
+      <DasType>bigint|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>2479</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <foreign-key id="291" parent="271" name="fkahxftgf9gduw5hrjbw226aw9s">
+      <ColNames>user_id</ColNames>
+      <ObjectId>28701</ObjectId>
+      <StateNumber>2484</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>28673</RefTableId>
+    </foreign-key>
+    <foreign-key id="292" parent="271" name="fkgwhfgnsaj03bytc793e2jn72f">
+      <ColNames>user_channels_id</ColNames>
+      <ObjectId>28696</ObjectId>
+      <StateNumber>2483</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>28666</RefTableId>
+    </foreign-key>
+    <index id="293" parent="271" name="users_user_channels_pkey">
+      <ColNames>user_id
+user_channels_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>28682</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>2479</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <index id="294" parent="271" name="uk_jkfmnnl5qlt3eyyqv2i6wvpba">
+      <ColNames>user_channels_id</ColNames>
+      <ObjectId>28684</ObjectId>
+      <StateNumber>2480</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="295" parent="271" name="users_user_channels_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>28683</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>2479</StateNumber>
+      <UnderlyingIndexId>28682</UnderlyingIndexId>
+    </key>
+    <key id="296" parent="271" name="uk_jkfmnnl5qlt3eyyqv2i6wvpba">
+      <ObjectId>28685</ObjectId>
+      <StateNumber>2480</StateNumber>
+      <UnderlyingIndexId>28684</UnderlyingIndexId>
     </key>
   </database-model>
 </dataSource>

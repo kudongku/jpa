@@ -1,8 +1,10 @@
 package me.dongku.jpa.channel;
 
 import jakarta.persistence.*;
-import lombok.*;
-import me.dongku.jpa.thread.Thread;
+import lombok.AccessLevel;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 import me.dongku.jpa.user.User;
 import me.dongku.jpa.userChannel.UserChannel;
 
@@ -46,19 +48,12 @@ public class Channel {
      * 연관관계 - Foreign Key 값을 따로 컬럼으로 정의하지 않고 연관 관계로 정의합니다.
      */
     @OneToMany(mappedBy = "channel", cascade = CascadeType.ALL, orphanRemoval = true)
-    private Set<Thread> threads = new LinkedHashSet<>();
-
-    @OneToMany(mappedBy = "channel", cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<UserChannel> userChannels = new LinkedHashSet<>();
 
     /**
      * 연관관계 편의 메소드 - 반대쪽에는 연관관계 편의 메소드가 없도록 주의합니다.
      */
-    public void addThread(Thread thread) {
-        this.threads.add(thread);
-    }
-
-    public UserChannel addUser(User user) {
+    public UserChannel joinUser(User user) {
         UserChannel userChannel = UserChannel.builder().user(user).channel(this).build();
         this.userChannels.add(userChannel);
         user.getUserChannels().add(userChannel);

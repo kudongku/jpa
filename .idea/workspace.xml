@@ -4,16 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90530b05-423f-4569-b280-6a14759d91f8" name="Changes" comment="test: cascade Test 완료">
+    <list default="true" id="90530b05-423f-4569-b280-6a14759d91f8" name="Changes" comment="test 오류발생">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/738d141b-a486-4b17-bb89-cf12aef07161 2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/738d141b-a486-4b17-bb89-cf12aef07161 2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/738d141b-a486-4b17-bb89-cf12aef07161.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/738d141b-a486-4b17-bb89-cf12aef07161.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/738d141b-a486-4b17-bb89-cf12aef07161/storage_v2/_src_/database/messenger.E7tmqg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/738d141b-a486-4b17-bb89-cf12aef07161/storage_v2/_src_/database/messenger.E7tmqg/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/channel/Channel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/channel/Channel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/thread/Thread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/thread/ThreadRepository.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/user/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/userChannel/UserChannel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/userChannel/UserChannel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/userChannel/UserChannelId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/userChannel/UserChannelId.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/me/dongku/jpa/thread/ThreadRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/me/dongku/jpa/thread/ThreadRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/userChannel/UserChannelId.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/me/dongku/jpa/channel/ChannelRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/me/dongku/jpa/mybatics/MyBatisTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/me/dongku/jpa/mybatics/configuration/DBConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/me/dongku/jpa/mybatics/mapper/AccountMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/me/dongku/jpa/mybatics/mapper/AccountMapperV2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/me/dongku/jpa/mybatics/vo/AccountMyBatisVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/me/dongku/jpa/thread/ThreadRepositoryTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/me/dongku/jpa/userChannel/UserChannelRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/me/dongku/jpa/userChannel/UserChannelRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -257,7 +265,7 @@
       <workItem from="1709627112286" duration="6370000" />
       <workItem from="1709696175159" duration="3073000" />
       <workItem from="1709713501189" duration="3103000" />
-      <workItem from="1709716626060" duration="303000" />
+      <workItem from="1709716626060" duration="2193000" />
     </task>
     <task id="LOCAL-00001" summary="feat: JDBC로 create account">
       <option name="closed" value="true" />
@@ -339,7 +347,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709695275228</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="test 오류발생">
+      <option name="closed" value="true" />
+      <created>1709716971563</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1709716971563</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -366,7 +382,8 @@
     <MESSAGE value="feat: RawJPA UserChannel에서 Id 복합키 사용" />
     <MESSAGE value="refactor: UserChannelRepo test 코드 맞게 수정" />
     <MESSAGE value="test: cascade Test 완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="test: cascade Test 완료" />
+    <MESSAGE value="test 오류발생" />
+    <option name="LAST_COMMIT_MESSAGE" value="test 오류발생" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -383,7 +400,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/me/dongku/jpa/channel/ChannelRepositoryTest.java</url>
           <line>19</line>
-          <properties class="me.dongku.jpa.channel.ChannelRepositoryTest" method="insertSelectChannel">
+          <properties class="me.dongku.jpa.channel.ChannelRepositoryTest">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -398,11 +415,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/me/dongku/jpa/channel/ChannelRepository.java</url>
           <line>13</line>
           <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/me/dongku/jpa/userChannel/UserChannelRepositoryTest.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

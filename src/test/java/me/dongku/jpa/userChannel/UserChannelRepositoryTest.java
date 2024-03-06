@@ -20,16 +20,14 @@ class UserChannelRepositoryTest {
 
     @Autowired
     private ChannelRepository channelRepository;
-
     @Test
     void insertSelectUserChannel() {
         User user = User.builder().username("test01").password("test01").build();
         Channel channel = Channel.builder().name("testChannel").build();
         User savedUser = userRepository.insertUser(user);
 
-        UserChannel userChannel = channel.addUser(savedUser);
+        UserChannel userChannel = channel.joinUser(savedUser);
         Channel savedChannel = channelRepository.insertChannel(channel);
-
         Channel foundChannel = channelRepository.selectChannel(savedChannel.getId());
     }
 
