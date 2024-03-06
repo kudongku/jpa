@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90530b05-423f-4569-b280-6a14759d91f8" name="Changes" comment="feat: RawJPA 클래스 추가 및 실습 테스트 추가" />
+    <list default="true" id="90530b05-423f-4569-b280-6a14759d91f8" name="Changes" comment="feat: RawJPA UserChannel에서 Id 복합키 사용" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -303,7 +303,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709628813709</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat: RawJPA UserChannel에서 Id 복합키 사용">
+      <option name="closed" value="true" />
+      <created>1709694060608</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1709694060608</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,7 +335,8 @@
     <MESSAGE value="feat: JDBC template로 insert, select 실습" />
     <MESSAGE value="feat: MyBatisTest 실행불가능한 코드 작성" />
     <MESSAGE value="feat: RawJPA 클래스 추가 및 실습 테스트 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: RawJPA 클래스 추가 및 실습 테스트 추가" />
+    <MESSAGE value="feat: RawJPA UserChannel에서 Id 복합키 사용" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: RawJPA UserChannel에서 Id 복합키 사용" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -345,6 +354,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/me/dongku/jpa/Application.java</url>
           <line>6</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/me/dongku/jpa/userChannel/UserChannelId.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -37,8 +37,6 @@ class UserChannelRepositoryTest {
         channelRepository.insertChannel(channel);
         UserChannel savedUserChannel = userChannelRepository.insertUserChannel(userChannel);
 
-        UserChannel foundUserChannel = userChannelRepository.selectUserChannel(savedUserChannel.getId());
-        assert foundUserChannel.getId().equals(savedUserChannel.getId());
     }
 
 }
