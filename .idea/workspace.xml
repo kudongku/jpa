@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90530b05-423f-4569-b280-6a14759d91f8" name="Changes" comment="feat: RawJPA 클래스 추가 및 실습 테스트 추가">
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/user/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/userChannel/UserChannel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/userChannel/UserChannelRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/me/dongku/jpa/userChannel/UserChannelRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/be3ebfd2-256b-4e87-815d-8e5deba24b58/storage_v2/_src_/database/messenger.E7tmqg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/be3ebfd2-256b-4e87-815d-8e5deba24b58/storage_v2/_src_/database/messenger.E7tmqg/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/channel/Channel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/channel/Channel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/user/Address.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/user/User.java" afterDir="false" />
-    </list>
+    <list default="true" id="90530b05-423f-4569-b280-6a14759d91f8" name="Changes" comment="feat: RawJPA 클래스 추가 및 실습 테스트 추가" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,6 +40,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -107,7 +98,7 @@
       <recent name="me.dongku.jpa.thread" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.UserChannelRepositoryTest.insertSelectUserChannel">
+  <component name="RunManager" selected="Spring Boot.Application">
     <configuration name="ChannelRepositoryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
