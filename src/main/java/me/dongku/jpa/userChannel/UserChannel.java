@@ -1,22 +1,20 @@
 package me.dongku.jpa.userChannel;
 
 import jakarta.persistence.*;
-import lombok.AccessLevel;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import me.dongku.jpa.channel.Channel;
 import me.dongku.jpa.user.User;
 
 @Getter
+@Setter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Entity
-@IdClass(UserChannelId.class)
 public class UserChannel {
     /**
      * 컬럼 - 연관관계 컬럼을 제외한 컬럼을 정의합니다.
      */
-
+    @EmbeddedId
+    private UserChannelId userChannelId;
     /**
      * 생성자 - 약속된 형태로만 생성가능하도록 합니다.
      */
@@ -30,14 +28,12 @@ public class UserChannel {
     /**
      * 연관관계 - Foreign Key 값을 따로 컬럼으로 정의하지 않고 연관 관계로 정의합니다.
      */
-    @Id
     @ManyToOne
-    @JoinColumn(name = "user_id")
+    @MapsId("userId")
     private User user;
 
-    @Id
     @ManyToOne
-    @JoinColumn(name = "channel_id")
+    @MapsId("channelId")
     private Channel channel;
 
     /**

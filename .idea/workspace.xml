@@ -5,25 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90530b05-423f-4569-b280-6a14759d91f8" name="Changes" comment="test: cascade Test 완료">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/738d141b-a486-4b17-bb89-cf12aef07161 2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/738d141b-a486-4b17-bb89-cf12aef07161 2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/738d141b-a486-4b17-bb89-cf12aef07161.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/738d141b-a486-4b17-bb89-cf12aef07161.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/738d141b-a486-4b17-bb89-cf12aef07161/storage_v2/_src_/database/messenger.E7tmqg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/738d141b-a486-4b17-bb89-cf12aef07161/storage_v2/_src_/database/messenger.E7tmqg/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/be3ebfd2-256b-4e87-815d-8e5deba24b58.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/be3ebfd2-256b-4e87-815d-8e5deba24b58/storage_v2/_src_/database/messenger.E7tmqg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/be3ebfd2-256b-4e87-815d-8e5deba24b58/storage_v2/_src_/database/messenger.E7tmqg/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/be3ebfd2-256b-4e87-815d-8e5deba24b58/storage_v2/_src_/database/messenger.E7tmqg/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/be3ebfd2-256b-4e87-815d-8e5deba24b58/storage_v2/_src_/database/messenger.E7tmqg/schema/public.abK9xQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/channel/Channel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/channel/Channel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/me/dongku/jpa/jdbc/JDBCTemplateTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/me/dongku/jpa/jdbc/JDBCTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/me/dongku/jpa/jdbc/dao/AccountDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/me/dongku/jpa/jdbc/template/AccountRowMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/me/dongku/jpa/jdbc/template/AccountTemplateDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/me/dongku/jpa/jdbc/vo/AccountVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/userChannel/UserChannel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/userChannel/UserChannel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/userChannel/UserChannelId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/userChannel/UserChannelId.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/me/dongku/jpa/thread/ThreadRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/me/dongku/jpa/thread/ThreadRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/me/dongku/jpa/userChannel/UserChannelRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/me/dongku/jpa/userChannel/UserChannelRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,8 +109,8 @@
       <recent name="me.dongku.jpa.thread" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ThreadRepositoryTest.deleteThreadWithOrphanRemoval">
-    <configuration name="ThreadRepositoryTest.deleteThreadWithOrphanRemoval" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.UserChannelRepositoryTest.insertSelectUserChannel">
+    <configuration name="ChannelRepositoryTest.insertSelectChannel" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -132,7 +123,31 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;me.dongku.jpa.thread.ThreadRepositoryTest.deleteThreadWithOrphanRemoval&quot;" />
+            <option value="&quot;me.dongku.jpa.channel.ChannelRepositoryTest.insertSelectChannel&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="ThreadRepositoryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;me.dongku.jpa.thread.ThreadRepositoryTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -191,30 +206,6 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="UserChannelRepositoryTest.insertSelectUserChannelWithCascadeTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;me.dongku.jpa.userChannel.UserChannelRepositoryTest.insertSelectUserChannelWithCascadeTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="jpa [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -246,11 +237,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ThreadRepositoryTest.deleteThreadWithOrphanRemoval" />
-        <item itemvalue="Gradle.jpa [build]" />
-        <item itemvalue="Gradle.UserChannelRepositoryTest.insertSelectUserChannelWithCascadeTest" />
         <item itemvalue="Gradle.UserChannelRepositoryTest.insertSelectUserChannel" />
+        <item itemvalue="Gradle.jpa [build]" />
+        <item itemvalue="Gradle.ChannelRepositoryTest.insertSelectChannel" />
         <item itemvalue="Gradle.UserChannelRepositoryTest" />
+        <item itemvalue="Gradle.ThreadRepositoryTest" />
       </list>
     </recent_temporary>
   </component>
@@ -265,6 +256,8 @@
       <workItem from="1709542819031" duration="15044000" />
       <workItem from="1709627112286" duration="6370000" />
       <workItem from="1709696175159" duration="3073000" />
+      <workItem from="1709713501189" duration="3103000" />
+      <workItem from="1709716626060" duration="303000" />
     </task>
     <task id="LOCAL-00001" summary="feat: JDBC로 create account">
       <option name="closed" value="true" />
@@ -387,17 +380,36 @@
           </properties>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/me/dongku/jpa/userChannel/UserChannelId.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="5" />
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/me/dongku/jpa/channel/ChannelRepositoryTest.java</url>
+          <line>19</line>
+          <properties class="me.dongku.jpa.channel.ChannelRepositoryTest" method="insertSelectChannel">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/me/dongku/jpa/thread/ThreadRepositoryTest.java</url>
-          <line>60</line>
-          <option name="timeStamp" value="10" />
+          <line>51</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/me/dongku/jpa/channel/ChannelRepository.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/me/dongku/jpa/userChannel/UserChannelRepositoryTest.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="me.dongku.jpa.user.User" memberName="username" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

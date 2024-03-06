@@ -1,10 +1,7 @@
 package me.dongku.jpa.channel;
 
 import jakarta.persistence.*;
-import lombok.AccessLevel;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import me.dongku.jpa.thread.Thread;
 import me.dongku.jpa.user.User;
 import me.dongku.jpa.userChannel.UserChannel;
@@ -22,7 +19,7 @@ public class Channel {
      */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
+    @Column(name = "id", nullable = false)
     private Long id;
 
     private String name;
@@ -51,7 +48,7 @@ public class Channel {
     @OneToMany(mappedBy = "channel", cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<Thread> threads = new LinkedHashSet<>();
 
-    @OneToMany(mappedBy = "channel", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "channel", cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<UserChannel> userChannels = new LinkedHashSet<>();
 
     /**
