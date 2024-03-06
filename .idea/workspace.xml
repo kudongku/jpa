@@ -4,24 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90530b05-423f-4569-b280-6a14759d91f8" name="Changes" comment="test 오류발생">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/738d141b-a486-4b17-bb89-cf12aef07161 2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/738d141b-a486-4b17-bb89-cf12aef07161 2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/738d141b-a486-4b17-bb89-cf12aef07161.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/738d141b-a486-4b17-bb89-cf12aef07161.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/738d141b-a486-4b17-bb89-cf12aef07161/storage_v2/_src_/database/messenger.E7tmqg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/738d141b-a486-4b17-bb89-cf12aef07161/storage_v2/_src_/database/messenger.E7tmqg/schema/public.abK9xQ.meta" afterDir="false" />
+    <list default="true" id="90530b05-423f-4569-b280-6a14759d91f8" name="Changes" comment="fix: id null 오류 복합키 삭제로 해결">
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/my/MyRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/my/MyRepositoryRegister.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/me/dongku/jpa/my/MyRepositoryRegisterTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/channel/Channel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/channel/Channel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/thread/Thread.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/thread/ThreadRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/userChannel/UserChannel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/userChannel/UserChannel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/userChannel/UserChannelId.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/me/dongku/jpa/channel/ChannelRepositoryTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/me/dongku/jpa/mybatics/MyBatisTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/me/dongku/jpa/mybatics/configuration/DBConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/me/dongku/jpa/mybatics/mapper/AccountMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/me/dongku/jpa/mybatics/mapper/AccountMapperV2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/me/dongku/jpa/mybatics/vo/AccountMyBatisVO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/me/dongku/jpa/thread/ThreadRepositoryTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/me/dongku/jpa/userChannel/UserChannelRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/me/dongku/jpa/userChannel/UserChannelRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,8 +39,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -72,35 +59,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.45517242&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "hotfix",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.45517242",
+    "settings.editor.selected.configurable": "editing.templates",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="me.dongku.jpa.mybatics.mapper" />
@@ -112,13 +99,14 @@
       <recent name="me.dongku.jpa" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="me.dongku.jpa.my" />
       <recent name="me.dongku.jpa.userChannel" />
       <recent name="me.dongku.jpa.channel" />
       <recent name="me.dongku.jpa.thread" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.UserChannelRepositoryTest.insertSelectUserChannel">
-    <configuration name="ChannelRepositoryTest.insertSelectChannel" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.MyRepositoryRegisterTest.myRepositoryTest">
+    <configuration name="MyRepositoryRegisterTest.myRepositoryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -131,31 +119,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;me.dongku.jpa.channel.ChannelRepositoryTest.insertSelectChannel&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="ThreadRepositoryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;me.dongku.jpa.thread.ThreadRepositoryTest&quot;" />
+            <option value="&quot;me.dongku.jpa.my.MyRepositoryRegisterTest.myRepositoryTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -214,6 +178,30 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="UserChannelRepositoryTest.insertSelectUserChannelWithCascadeTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;me.dongku.jpa.userChannel.UserChannelRepositoryTest.insertSelectUserChannelWithCascadeTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="jpa [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -245,11 +233,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.MyRepositoryRegisterTest.myRepositoryTest" />
+        <item itemvalue="Gradle.UserChannelRepositoryTest" />
+        <item itemvalue="Gradle.UserChannelRepositoryTest.insertSelectUserChannelWithCascadeTest" />
         <item itemvalue="Gradle.UserChannelRepositoryTest.insertSelectUserChannel" />
         <item itemvalue="Gradle.jpa [build]" />
-        <item itemvalue="Gradle.ChannelRepositoryTest.insertSelectChannel" />
-        <item itemvalue="Gradle.UserChannelRepositoryTest" />
-        <item itemvalue="Gradle.ThreadRepositoryTest" />
       </list>
     </recent_temporary>
   </component>
@@ -265,7 +253,7 @@
       <workItem from="1709627112286" duration="6370000" />
       <workItem from="1709696175159" duration="3073000" />
       <workItem from="1709713501189" duration="3103000" />
-      <workItem from="1709716626060" duration="2193000" />
+      <workItem from="1709716626060" duration="7462000" />
     </task>
     <task id="LOCAL-00001" summary="feat: JDBC로 create account">
       <option name="closed" value="true" />
@@ -355,7 +343,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709716971563</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="fix: id null 오류 복합키 삭제로 해결">
+      <option name="closed" value="true" />
+      <created>1709718999022</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1709718999022</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -383,7 +379,8 @@
     <MESSAGE value="refactor: UserChannelRepo test 코드 맞게 수정" />
     <MESSAGE value="test: cascade Test 완료" />
     <MESSAGE value="test 오류발생" />
-    <option name="LAST_COMMIT_MESSAGE" value="test 오류발생" />
+    <MESSAGE value="fix: id null 오류 복합키 삭제로 해결" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: id null 오류 복합키 삭제로 해결" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -415,6 +412,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/me/dongku/jpa/channel/ChannelRepository.java</url>
           <line>13</line>
           <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/me/dongku/jpa/my/MyRepositoryRegisterTest.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
