@@ -1,9 +1,10 @@
 package me.dongku.jpa.user;
 
 import jakarta.persistence.*;
-import lombok.*;
-import lombok.ToString.Exclude;
-import me.dongku.jpa.channel.Channel;
+import lombok.AccessLevel;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 import me.dongku.jpa.userChannel.UserChannel;
 
 import java.util.LinkedHashSet;
@@ -20,7 +21,7 @@ public class User {
      */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="id", nullable = false)
+    @Column(name = "id", nullable = false)
     private Long id;
 
     @Column(length = 25)
@@ -47,7 +48,7 @@ public class User {
     /**
      * 연관관계 편의 메소드 - 반대쪽에는 연관관계 편의 메소드가 없도록 주의합니다.
      */
-    public void addUserChannel(UserChannel userChannel){
+    public void addUserChannel(UserChannel userChannel) {
         userChannels.add(userChannel);
     }
 
