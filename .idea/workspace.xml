@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90530b05-423f-4569-b280-6a14759d91f8" name="Changes" comment="fix: id null 오류 복합키 삭제로 해결">
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/my/MyRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/dongku/jpa/my/MyRepositoryRegister.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/me/dongku/jpa/my/MyRepositoryRegisterTest.java" afterDir="false" />
+    <list default="true" id="90530b05-423f-4569-b280-6a14759d91f8" name="Changes" comment="feat: repository를 JpaRepository 상속받게">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/me/dongku/jpa/userChannel/UserChannelRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/me/dongku/jpa/userChannel/UserChannelRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,7 +249,7 @@
       <workItem from="1709627112286" duration="6370000" />
       <workItem from="1709696175159" duration="3073000" />
       <workItem from="1709713501189" duration="3103000" />
-      <workItem from="1709716626060" duration="7462000" />
+      <workItem from="1709716626060" duration="9064000" />
     </task>
     <task id="LOCAL-00001" summary="feat: JDBC로 create account">
       <option name="closed" value="true" />
@@ -351,7 +347,23 @@
       <option name="project" value="LOCAL" />
       <updated>1709718999022</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="feat: 직접 RepositoryRegister 선언">
+      <option name="closed" value="true" />
+      <created>1709734483638</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1709734483638</updated>
+    </task>
+    <task id="LOCAL-00014" summary="feat: repository를 JpaRepository 상속받게">
+      <option name="closed" value="true" />
+      <created>1709734618617</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1709734618617</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -380,7 +392,9 @@
     <MESSAGE value="test: cascade Test 완료" />
     <MESSAGE value="test 오류발생" />
     <MESSAGE value="fix: id null 오류 복합키 삭제로 해결" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: id null 오류 복합키 삭제로 해결" />
+    <MESSAGE value="feat: 직접 RepositoryRegister 선언" />
+    <MESSAGE value="feat: repository를 JpaRepository 상속받게" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: repository를 JpaRepository 상속받게" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -407,11 +421,6 @@
           <url>file://$PROJECT_DIR$/src/test/java/me/dongku/jpa/thread/ThreadRepositoryTest.java</url>
           <line>51</line>
           <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/me/dongku/jpa/channel/ChannelRepository.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/me/dongku/jpa/my/MyRepositoryRegisterTest.java</url>

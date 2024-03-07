@@ -10,6 +10,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.annotation.Rollback;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Optional;
+
 @SpringBootTest
 @Transactional
 @Rollback(value = false)
@@ -24,9 +26,9 @@ class UserChannelRepositoryTest {
     void insertSelectUserChannel() {
         User user = User.builder().username("test01").password("test01").build();
         Channel channel = Channel.builder().name("testChannel").build();
-        User savedUser = userRepository.insertUser(user);
-
         UserChannel userChannel = channel.joinUser(savedUser);
+
+        Optional<User> savedUser = userRepository.findByUsername(user.getUsername());
         Channel savedChannel = channelRepository.insertChannel(channel);
         Channel foundChannel = channelRepository.selectChannel(savedChannel.getId());
     }
