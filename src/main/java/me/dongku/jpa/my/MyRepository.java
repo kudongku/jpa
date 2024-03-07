@@ -1,21 +1,19 @@
 package me.dongku.jpa.my;
 
-import lombok.Setter;
+import org.springframework.data.repository.NoRepositoryBean;
+import org.springframework.data.repository.Repository;
 
-import java.util.HashMap;
+import java.io.Serializable;
+import java.util.List;
+import java.util.Optional;
 
-@Setter
-public class MyRepository {
+@NoRepositoryBean
+public interface MyRepository<User, ID extends Serializable> extends Repository<User, ID> {
 
-    private HashMap<Long, String> dataTable; // DB 테이블을 의미
+    User save(User entity);
 
-    public String find(Long id) {
-        return dataTable.getOrDefault(id, "");
-    }
+    Optional<User> findByUsername(String username);
 
-    public Long save(String data) {
-        var newId = Long.valueOf(dataTable.size());
-        this.dataTable.put(newId, data);
-        return newId;
-    }
+    List<User> findAll();
+
 }
