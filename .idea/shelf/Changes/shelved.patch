@@ -1,0 +1,17 @@
+Index: src/main/java/me/dongku/jpa/my/MyRepository.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package me.dongku.jpa.my;\n\nimport org.springframework.data.repository.NoRepositoryBean;\nimport org.springframework.data.repository.Repository;\n\nimport java.io.Serializable;\nimport java.util.List;\nimport java.util.Optional;\n\n@NoRepositoryBean\npublic interface MyRepository<User, ID extends Serializable> extends Repository<User, ID> {\n\n    User save(User entity);\n\n    Optional<User> findByUsername(String username);\n\n    List<User> findAll();\n\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/me/dongku/jpa/my/MyRepository.java b/src/main/java/me/dongku/jpa/my/MyRepository.java
+--- a/src/main/java/me/dongku/jpa/my/MyRepository.java	(revision 1fdc63e30d747a09b9a77f80cde80cc839e324a6)
++++ b/src/main/java/me/dongku/jpa/my/MyRepository.java	(date 1709778795593)
+@@ -14,6 +14,5 @@
+ 
+     Optional<User> findByUsername(String username);
+ 
+-    List<User> findAll();
+ 
+ }
